@@ -91,14 +91,14 @@
 
         <!-- The Google Cloud Messaging receiver and services -->
         <service
-            android:name="fcm.MyFcmListenerService"
+            android:name=".fcm.MyFcmListenerService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
         <service
-            android:name="fcm.MyInstanceIDListenerService"
+            android:name=".fcm.MyInstanceIDListenerService"
             android:exported="false">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
